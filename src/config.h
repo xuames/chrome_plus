@@ -65,15 +65,7 @@ std::wstring GetDirPath(const std::wstring& dirType) {
   std::wstring Dir = GetAbsolutePath(ExpandedPath);
 
   return Dir;
-}
 
-std::wstring GetUserDataDir() {
-  return GetDirPath(L"Data");
-}
-
-std::wstring GetDiskCacheDir() {
-  return GetDirPath(L"Cache");
-}
 
 // 老板键
 std::wstring GetBosskey() {
