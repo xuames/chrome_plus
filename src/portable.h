@@ -56,15 +56,6 @@ std::wstring GetCommand(LPWSTR param) {
 
       args.push_back(L"--disable-features=WinSboxNoFakeGdiInit");
 
-      {
-        auto userdata = GetUserDataDir();
-        args.push_back(L"--user-data-dir=" + userdata);
-      }
-
-      {
-        auto diskcache = GetDiskCacheDir();
-        args.push_back(L"--disk-cache-dir=" + diskcache);
-      }
 
       // Get the command line and append parameters
       // Intercept and split the parameters starting with each --,
